@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nombre": "Desarrollo web",
+    "precio": "$500.000",
+    "estado": "En Oferta",
+    "descripcion": "Sitios y apps a medida para tu crecimiento.",
+    "imagen": "desarrollo-web"
+  },
+  {
+    "id": 2,
+    "nombre": "Consultoría UX",
+    "precio": "$300.000",
+    "estado": "",
+    "descripcion": "Optimiza las experiencias para mejor conversión.",
+    "imagen": "consultoria-ux"
+  },
+  {
+    "id": 3,
+    "nombre": "Mantenimiento mensual",
+    "precio": "$200.000",
+    "estado": "",
+    "descripcion": "Soporte continuo para tu tranquilidad.",
+    "imagen": "mantenimiento"
+  }
+]

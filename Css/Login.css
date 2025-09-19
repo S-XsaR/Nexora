@@ -35,6 +35,16 @@ body {
     align-items: center;
     padding: 1rem 20px;
 }
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5px;
+}
+.logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
 
 .logo h2 {
     color: #2c3e50;

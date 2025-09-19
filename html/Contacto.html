@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../Css/Contacto.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="container nav">
+            <div class="">Nexora Consulting</div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Inicio</a></li>
+                <li><a href="Servicios.html">Servicios</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                 <li><a href="login.html" class="btn-login">Iniciar sesión</a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="main-content">
+            <div class="contact-section">
+                <div class="contact-form">
+                    <h1>Contacto</h1>
+                    <p class="subtitle">Ponte en contacto con Nexora Consulting. Responderemos dentro de 1 día hábil.</p>
+                    
+                    <div class="form-section">
+                        <h3>Envianos un mensaje</h3>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" id="nombre" name="nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="tel" id="telefono" name="telefono">
+                                </div>
+                                <div class="form-group">
+                                    <label for="asunto">Asunto</label>
+                                    <input type="text" id="asunto" name="asunto">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group full-width">
+                                    <label for="mensaje">Escribe tu mensaje...</label>
+                                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="privacy-section">
+                                Al enviar aceptas nuestra política de privacidad.
+                            </div>
+                            
+                            <div class="form-actions">
+                                <button type="submit" class="btn-primary">
+                                    📧 Enviar mensaje
+                                </button>
+                                <button type="button" class="btn-secondary">
+                                    📄 Ver política
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <h3>Información de contacto</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>info@nexora.co</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <h4>Teléfono</h4>
+                            <p>+57 300 000 0000</p>
+                            <button class="call-btn">Llamar</button>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <h4>Ubicación</h4>
+                            <p>Medellín, Colombia</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">🕒</div>
+                        <div class="info-content">
+                            <h4>Horario</h4>
+                            <p>Lun - Vie: 8:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <iframe
+                        src="https://www.google.com/maps?q=Bogotá,Colombia&output=embed"
+                        width="100%"
+                        height="100%"
+                        style="border:0; min-height:300px; border-radius:8px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Nexora Consulting</h4>
+                    <p>Estrategia, diseño y desarrollo para tu negocio.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">f</a>
+                        <a href="#" class="social-link">t</a>
+                        <a href="#" class="social-link">in</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Compañía</h4>
+                    <div class="footer-links">
+                        <a href="Nosotros.html">Nosotros</a>
+                        <a href="Servicios.html">Servicios</a>
+                        <a href="Contacto.html">Contacto</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>info@nexora.co</p>
+                    <p>+57 300 000 0000</p>
+                    <p>Medellín, Colombia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2024 Nexora Consulting
+            </div>
+        </div>
+    </footer>
+    <script src="../Js/Contacto.js"></script>
+    </body>
+</html>

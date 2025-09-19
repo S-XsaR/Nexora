@@ -68,13 +68,17 @@ body {
 .nav-menu a:hover {
     color: #007bff;
 }
+main {
+margin-top: 90px;
+}
 
 .servicios-grid {
-    display: flex;
-    gap: 20px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+    overflow-x: unset;
+    scroll-snap-type: none;
 }
 
 .servicio-card {
@@ -109,7 +113,7 @@ body {
     color: #0c203b;
 }
 
-.desarrollo-web { background-image: url('../Img/consultores.jpg'); }
-.consultoria-ux { background-image: url('../Img/consultores.jpg'); }
-.mantenimiento { background-image: url('../Img/consultores.jpg'); }
+.desarrollo-web { background-image: url('../Img/desarrollo\ web.webp'); }
+.consultoria-ux { background-image: url('../Img/consultores.webp'); }
+.mantenimiento { background-image: url('../Img/mantenimiento.webp'); }
  

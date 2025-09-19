@@ -68,3 +68,48 @@ body {
 .nav-menu a:hover {
     color: #007bff;
 }
+
+.servicios-grid {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+
+.servicio-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background: #fff;
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+}
+.servicio-image {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+.servicio-content {
+    padding: 15px;
+}
+.precio {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0c203b;
+}
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 0.8em;
+    margin: 5px 0;
+    background: #8de5ee;
+    color: #0c203b;
+}
+
+.desarrollo-web { background-image: url('../Img/consultores.jpg'); }
+.consultoria-ux { background-image: url('../Img/consultores.jpg'); }
+.mantenimiento { background-image: url('../Img/consultores.jpg'); }
+ 

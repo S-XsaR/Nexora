@@ -1,30 +1,31 @@
+/* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* Header y Navegación */
+/* ================= Header ================= */
 .navbar {
-    background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -50,167 +51,169 @@ body {
     color: #2c3e50;
     font-weight: 600;
     font-size: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20px;
 }
 
 .nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
 
 .nav-menu a {
-    text-decoration: none;
-    color: #666;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-menu a:hover {
-    color: #007bff;
+  color: #007bff;
 }
 
-/* Sección Hero */
+/* ================= Hero ================= */
 .hero {
-    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
-    color: rgb(2, 2, 2);
-    padding: 120px 0 80px;
-    text-align: center;
-    margin-top: 80px;
-
+  padding: 120px 0 80px;
+  text-align: center;
+  margin-top: 80px;
+  background: #fff;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    line-height: 1.2;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cta-button {
-    background: #007bff;
-    color: white;
-    border: none;
-    padding: 15px 300px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0,123,255,0.3);
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 15px 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,123,255,0.3);
 }
 
 .cta-button:hover {
-    background: #0056b3;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,123,255,0.4);
-    
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,123,255,0.4);
 }
 
-/* Sección Servicios */
+/* ================= Servicios ================= */
 .servicios {
-    padding: 80px 0;
-    background: white;
-    
+  padding: 80px 20px;
+  background: #fff;
 }
 
 .servicios h2 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #2c3e50;
-    font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem; 
+  color: #2c3e50;
+  font-weight: 700;
+  text-align: center;
 }
 
+/* grid de servicios */
 .servicios-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
 }
 
+/* estilo de cards */
 .servicio-card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    border: 1px solid #e9ecef;
+  background: #fff;
+  border-radius: 15px; 
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .servicio-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+/* imagen */
 .servicio-image {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
 }
 
-.desarrollo-web {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                url('https://tse3.mm.bing.net/th/id/OIP.4m1S4eiEyvBu6iWEk-wZnAHaEK?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" viewBox="0 0 400 200"><rect fill="%23ff6b6b" width="400" height="200"/><rect fill="white" x="50" y="50" width="300" height="20" rx="10"/><rect fill="white" x="50" y="80" width="200" height="15" rx="7"/><rect fill="white" x="50" y="105" width="250" height="15" rx="7"/><circle fill="white" cx="320" cy="70" r="25"/></svg>');
-}
-
-.consultoria-ux {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                url('https://tse4.mm.bing.net/th/id/OIP.2ZOC8MYo5WIta9t00RupCAHaE8?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" viewBox="0 0 400 200"><rect fill="%2354a0ff" width="400" height="200"/><rect fill="white" x="50" y="40" width="300" height="120" rx="10"/><rect fill="%2354a0ff" x="70" y="60" width="260" height="80" rx="5"/><circle fill="white" cx="200" cy="100" r="20"/></svg>');
-}
-
-.mantenimiento {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                url('https://tse4.mm.bing.net/th/id/OIP.dFEkBDvddFqepP9-eE_HZAHaFj?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" viewBox="0 0 400 200"><rect fill="%235f27cd" width="400" height="200"/><rect fill="white" x="100" y="50" width="200" height="100" rx="10"/><circle fill="%235f27cd" cx="150" cy="75" r="8"/><circle fill="%235f27cd" cx="200" cy="75" r="8"/><circle fill="%235f27cd" cx="250" cy="75" r="8"/><rect fill="%235f27cd" x="120" y="100" width="160" height="30" rx="15"/></svg>');
-}
-
+/* contenido */
 .servicio-content {
-    padding: 1.5rem;
+  padding: 1.2rem;
+  text-align: left;
 }
 
 .servicio-content h3 {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #2c3e50;
-    margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
 }
 
 .precio {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #28a745;
-    margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #28a745;
+  margin-bottom: 0.5rem;
 }
 
 .badge {
-    display: inline-block;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.disponible {
-    background: #d4edda;
-    color: #155724;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: #d4edda;
+  color: #155724;
 }
 
 .servicio-content p {
-    color: #666;
-    font-size: 0.95rem;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
-/* Footer */
-footer {
+
+/* ====== Imágenes de servicios ====== */
+.desarrollo-web {
+  background-image: url('../img/desarrollo\ web.webp');
+}
+
+.consultoria-ux {
+  background-image: url('../img/consultores.webp');
+}
+
+.mantenimiento {
+  background-image: url('../img/mantenimiento.webp');
+}
+
+/* ================= Footer ================= */
+ footer {
     background: #ffffff;
     box-sizing: border-box;
       box-shadow: 0 2px 10px rgb(0, 0, 0);

@@ -63,119 +63,197 @@ body {
     color: #666;
     font-weight: 500;
     transition: color 0.3s ease;
+    font-size: 13px;
+    color: #666;
+    margin-top: 15px;
+    
+    background-color: #cddce6; /* azul claro */
+    color: #333;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .nav-menu a:hover {
     color: #007bff;
 }
 
-/*================== Login ==================*/
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f0f8ff;
-}
 
-
-.login-container {
-  background-color: #ffffff; /* Blanco puro */
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 450px;
+/*================== Admin Index ==================*/
+.admin-title {
+  margin-top: 120px;
+  font-size: 2rem;
+  color: #007acc;
   text-align: center;
 }
 
-.login-container h2 {
+.admin-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 250px;
+}
+
+.contenedor {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.form-section {
+  background-color: #e7f1f8;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.form-section h2 {
+  color: #007acc;
   margin-bottom: 20px;
-  color: #007acc; /* Azul medio */
 }
 
-label {
+.form-section label {
   display: block;
-  text-align: left;
   margin: 10px 0 5px;
-  color: #333;
   font-weight: 500;
+  color: #333;
 }
 
-input {
+.form-section input,
+.form-section textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   margin-bottom: 15px;
-  font-size: 14px;
 }
 
-button {
-  width: 100%;
-  padding: 12px;
-  background-color: #007acc; /* Azul medio */
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #007acc; /* azul Nexora */
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+  outline: 2px solid #007acc;
+}
+
+
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background-color: #007acc;
   color: white;
   border: none;
+  padding: 10px 20px;
   border-radius: 6px;
-  font-size: 16px;
   cursor: pointer;
+  font-weight: 500;
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #005f99; /* Azul más oscuro al pasar el mouse */
+.btn-primary:hover {
+  background-color: #005f99;
 }
 
-.info {
-  font-size: 13px;
-  color: #666;
-  margin-top: 15px;
-  
-  background-color: #cddce6; /* azul claro */
+.btn-secondary {
+  background-color: #ccc;
   color: #333;
-  padding: 15px 20px;
-  border-radius: 10px;
-  font-size: 14px;
-  max-width: 500px;
-  margin: 20px auto;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 50px;
+}
+
+.table-section th,
+.table-section td {
+  padding: 12px;
+  border: 1px solid #ddd;
   text-align: center;
 }
 
-.secure {
-  font-size: 12px;
-  color: #545b5f;
-  margin-top: 5px;
-}
-
-.main-content {
-  padding-top: 100px; /* espacio para el header fijo */
-  padding-bottom: 80px; /* espacio para el footer */
-  min-height: calc(100vh - 180px); /* altura ajustada */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.login-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.forgot-password {
-  display: block;
-  margin-top: 10px;
-  font-size: 13px;
+.table-section th {
+  background-color: #e0f3ff;
   color: #007acc;
+  font-weight: 600;
+}
+
+.btn-table {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-table.edit {
+  background-color: #007acc;
+  color: white;
+}
+
+.btn-table.delete {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
   text-decoration: none;
+  font-weight: 500;
 }
 
-.forgot-password:hover {
-  text-decoration: underline;
+.oferta {
+  display: inline-block;
+  background-color: #58d869; /* verde promoción */
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
 }
-
-#mensajeError {
-    color: #ff0000;
-}
-
 
 
 /* ================= Footer ================= */

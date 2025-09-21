@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-<>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="/Css/Login.css">
-      <link rel="icon" type="image/png" href="../img/Ne logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/Ne logo.png">
 
 </head>
 <body>
@@ -21,11 +22,67 @@
                     <li><a href="Servicios.html">Servicios</a></li>
                     <li><a href="Nosotros.html">Nosotros</a></li>
                     <li><a href="Contacto.html">Contacto</a></li>
-                     <li><a href="login.html" class="btn-login">Iniciar sesión</a></li>
-                </ul>
+                    <li><a href="login.html" class="btn-login">Iniciar sesión</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
+    <main class="main-content">
+        <div class="login-wrapper">
+            <div class="login-container">
+                <h2>Inicio de Sesión Administrativa</h2>
+                <p>Ingrese sus credemciales para continuar</p>
+                <form id="loginForm">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" name="usuario" required>
+    
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+    
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+                <p class="info">Solo personal autorizado puede acceder a esta sección.</p>
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                <p class="secure">Sesión segura</p>
+                <p id="mensajeError" class="mensaje-info" style="display:none;"></p>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nexora Consulting</h3>
+                    <p>Estrategias, diseño y desarrollo con foco en el crecimiento de tu negocio.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <span class="social-icon">📘</span>
+                        <span class="social-icon">🐦</span>
+                        <span class="social-icon">📧</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>+57 300 000 0000</p>
+                    <p>Bogotá, Colombia</p>
+                    <p class="copyright">© 2025 Nexera Consulting</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/Login.js"></script>
 </body>
 </html>

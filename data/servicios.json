@@ -22,5 +22,61 @@
     "estado": "",
     "descripcion": "Soporte continuo para tu tranquilidad.",
     "imagen": "mantenimiento"
+  },
+  {
+    "id": 4,
+    "nombre": "Mantenimiento mensual",
+    "precio": "$200.000",
+    "estado": "",
+    "descripcion": "Soporte continuo para tu tranquilidad.",
+    "imagen": "mantenimiento"
+  },
+  {
+    "id": 5,
+    "nombre": "Mantenimiento mensual",
+    "precio": "$200.000",
+    "estado": "",
+    "descripcion": "Soporte continuo para tu tranquilidad.",
+    "imagen": "mantenimiento"
+  },
+  {
+    "id": 6,
+    "nombre": "Mantenimiento mensual",
+    "precio": "$200.000",
+    "estado": "",
+    "descripcion": "Soporte continuo para tu tranquilidad.",
+    "imagen": "mantenimiento"
+  },
+  {
+    "id": 7,
+    "nombre": "Mantenimiento mensual",
+    "precio": "$200.000",
+    "estado": "",
+    "descripcion": "Soporte continuo para tu tranquilidad.",
+    "imagen": "mantenimiento"
+  },
+  {
+    "id": 8,
+    "nombre": "Mantenimiento mensual",
+    "precio": "$200.000",
+    "estado": "",
+    "descripcion": "Soporte continuo para tu tranquilidad.",
+    "imagen": "mantenimiento"
+  },
+  {
+    "id": 9,
+    "nombre": "Mantenimiento mensual",
+    "precio": "$200.000",
+    "estado": "",
+    "descripcion": "Soporte continuo para tu tranquilidad.",
+    "imagen": "mantenimiento"
+  },
+  {
+    "id": 10,
+    "nombre": "Mantenimiento mensual",
+    "precio": "$200.000",
+    "estado": "",
+    "descripcion": "Soporte continuo para tu tranquilidad.",
+    "imagen": "mantenimiento"
   }
 ]

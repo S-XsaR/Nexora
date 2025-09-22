@@ -119,6 +119,73 @@ body {
 }
 
 /* ================= Servicios ================= */
+
+/* ---- Carrusel horizontal ---- */
+.carrusel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 48px; 
+}
+
+#servicios-container.carrusel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+#servicios-container::-webkit-scrollbar { display: none; }
+#servicios-container { scrollbar-width: none; }
+
+.servicio-card {
+  flex: 0 0 320px;  
+  scroll-snap-align: start;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  transition: .3s;
+  cursor: pointer;
+}
+.servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+}
+
+.servicio-image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* Flechas */
+.carrusel-btn {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 36px; height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0,0,0,.45);
+  color: #fff;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: background .2s;
+}
+.carrusel-btn:hover { background: rgba(0,0,0,.75); }
+.carrusel-btn.prev { left: 8px; }
+.carrusel-btn.next { right: 8px; }
+
+@media (max-width: 768px) {
+  .servicio-card { flex-basis: 280px; }
+}
+
 .servicios {
   padding: 80px 20px;
   background: #fff;

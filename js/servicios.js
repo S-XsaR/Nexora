@@ -7,7 +7,7 @@ async function cargarServiciostabla() {
 
     const servicios = await response.json();
     const tabla = document.getElementById("tabla-servicios");
-    tabla.innerHTML = ""; // limpiar antes de pintar
+    tabla.innerHTML = ""; 
 
     servicios.forEach(servicio => {
       const fila = document.createElement("tr");
@@ -24,14 +24,11 @@ async function cargarServiciostabla() {
       tabla.appendChild(fila);
     });
 
-    // Delegar evento agregar al carrito
     tabla.addEventListener("click", (e) => {
       if (e.target.classList.contains("btn-agregar")) {
         const id = e.target.dataset.id;
         const servicio = servicios.find(s => s.id == id);
         agregarAlCarrito(servicio);
-
-        // 🔹 mostrar aviso flotante
         mostrarNotificacion(`${servicio.nombre} agregado al carrito ✅`);
       }
     });
@@ -40,6 +37,5 @@ async function cargarServiciostabla() {
   }
 }
 
-// Ejecutar al cargar la página
 document.addEventListener("DOMContentLoaded", cargarServiciostabla);
 

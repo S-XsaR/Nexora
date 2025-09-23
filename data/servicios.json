@@ -25,58 +25,58 @@
   },
   {
     "id": 4,
-    "nombre": "Mantenimiento mensual",
-    "precio": "$200.000",
-    "estado": "",
-    "descripcion": "Soporte continuo para tu tranquilidad.",
-    "imagen": "mantenimiento"
+    "nombre": "SEO Avanzado",
+    "precio": "$250.000",
+    "estado": "En Oferta",
+    "descripcion": "Mejora tu visibilidad en buscadores y aumenta clientes.",
+    "imagen": "seo"
   },
   {
     "id": 5,
-    "nombre": "Mantenimiento mensual",
-    "precio": "$200.000",
+    "nombre": "Auditoría de seguridad",
+    "precio": "$450.000",
     "estado": "",
-    "descripcion": "Soporte continuo para tu tranquilidad.",
-    "imagen": "mantenimiento"
+    "descripcion": "Protege tu web con análisis de vulnerabilidades.",
+    "imagen": "seguridad"
   },
   {
     "id": 6,
-    "nombre": "Mantenimiento mensual",
-    "precio": "$200.000",
+    "nombre": "Marketing Digital",
+    "precio": "$350.000",
     "estado": "",
-    "descripcion": "Soporte continuo para tu tranquilidad.",
-    "imagen": "mantenimiento"
+    "descripcion": "Campañas en redes sociales y Google Ads.",
+    "imagen": "marketing"
   },
   {
     "id": 7,
-    "nombre": "Mantenimiento mensual",
-    "precio": "$200.000",
+    "nombre": "Branding y diseño gráfico",
+    "precio": "$280.000",
     "estado": "",
-    "descripcion": "Soporte continuo para tu tranquilidad.",
-    "imagen": "mantenimiento"
+    "descripcion": "Construye una identidad visual fuerte y memorable.",
+    "imagen": "branding"
   },
   {
     "id": 8,
-    "nombre": "Mantenimiento mensual",
-    "precio": "$200.000",
-    "estado": "",
-    "descripcion": "Soporte continuo para tu tranquilidad.",
-    "imagen": "mantenimiento"
+    "nombre": "E-commerce",
+    "precio": "$600.000",
+    "estado": "En Oferta",
+    "descripcion": "Tiendas online completas listas para vender.",
+    "imagen": "ecommerce"
   },
   {
     "id": 9,
-    "nombre": "Mantenimiento mensual",
-    "precio": "$200.000",
+    "nombre": "Gestión de redes sociales",
+    "precio": "$220.000",
     "estado": "",
-    "descripcion": "Soporte continuo para tu tranquilidad.",
-    "imagen": "mantenimiento"
+    "descripcion": "Crecimiento orgánico y contenido estratégico.",
+    "imagen": "redes"
   },
   {
     "id": 10,
-    "nombre": "Mantenimiento mensual",
-    "precio": "$200.000",
+    "nombre": "Consultoría en la nube",
+    "precio": "$400.000",
     "estado": "",
-    "descripcion": "Soporte continuo para tu tranquilidad.",
-    "imagen": "mantenimiento"
+    "descripcion": "Migración y optimización en AWS, Azure o GCP.",
+    "imagen": "cloud"
   }
 ]

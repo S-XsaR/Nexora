@@ -1,17 +1,14 @@
 // js/home.js
 async function cargarServiciosHome() {
   try {
-    // Cargar el JSON
     const response = await fetch('../data/servicios.json');
     if (!response.ok) throw new Error('No se pudo cargar servicios.json');
 
     const servicios = await response.json();
 
-    // Contenedor donde se van a renderizar los cards
     const contenedor = document.getElementById("servicios-container");
     contenedor.innerHTML = "";
 
-    // Pintar los servicios en el Home
     servicios.forEach(servicio => {
       const card = document.createElement("div");
       card.classList.add("servicio-card");

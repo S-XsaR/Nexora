@@ -118,12 +118,19 @@ main {
   color: #0c203b;
 }
 
-/* Ejemplo imágenes específicas */
 .desarrollo-web { background-image: url('../Img/desarrollo web.webp'); }
 .consultoria-ux { background-image: url('../Img/consultores.webp'); }
 .mantenimiento { background-image: url('../Img/mantenimiento.webp'); }
+.seo { background-image: url('../Img/seo.webp'); }
+.seguridad { background-image: url('../Img/seguridad.webp'); }
+.marketing { background-image: url('../Img/marketing.webp'); }
+.branding { background-image: url('../Img/branding.webp'); }
+.ecommerce { background-image: url('../Img/ecommerce.webp'); }
+.redes { background-image: url('../Img/redes.webp'); }
+.cloud { background-image: url('../Img/cloud.webp'); }
 
-/* ====== Tabla de Servicios (Mockup estilo Pro) ====== */
+
+/* ====== Tabla de Servicios ====== */
 .tabla-servicios {
   margin: 20px;
   padding: 20px;
@@ -175,7 +182,7 @@ tbody tr:hover {
   color: #0c203b;
 }
 
-/* ====== Tabla de Servicios (Mockup estilo Pro) ====== */
+/* ====== Tabla de Servicios ====== */
 .tabla-servicios {
   margin: 40px auto;
   padding: 20px;
@@ -193,7 +200,6 @@ table {
   background: white;
 }
 
-/* Columna descripción */
 td:nth-child(5) {
   max-width: 300px;
   white-space: nowrap;
@@ -209,12 +215,12 @@ td:nth-child(5):hover {
 .badge {
   display: inline-block;
   padding: 4px 10px;
-  border-radius: 12px;   /* redondeado tipo "pill" */
+  border-radius: 12px;   
   font-size: 0.8rem;
   font-weight: 500;
 }
 
 .badge.disponible {
-  background: #d4f0db;   /* verde suave */
-  color: #116530;        /* verde oscuro */
+  background: #d4f0db;  
+  color: #116530;      
 }

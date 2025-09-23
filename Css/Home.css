@@ -279,6 +279,14 @@ body {
   background-image: url('../img/mantenimiento.webp');
 }
 
+.seo { background-image: url('../Img/seo.webp'); }
+.seguridad { background-image: url('../Img/seguridad.webp'); }
+.marketing { background-image: url('../Img/marketing.webp'); }
+.branding { background-image: url('../Img/branding.webp'); }
+.ecommerce { background-image: url('../Img/ecommerce.webp'); }
+.redes { background-image: url('../Img/redes.webp'); }
+.cloud { background-image: url('../Img/cloud.webp'); }
+
 /* ================= Footer ================= */
  footer {
     background: #ffffff;

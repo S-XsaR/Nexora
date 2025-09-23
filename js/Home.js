@@ -35,6 +35,9 @@ async function cargarServiciosHome() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  cargarServiciosHome(); 
+
   const scroller = document.getElementById("servicios-container");
   const prevBtn = document.querySelector(".carrusel-btn.prev");
   const nextBtn = document.querySelector(".carrusel-btn.next");

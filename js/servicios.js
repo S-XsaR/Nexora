@@ -1,33 +1,45 @@
 // js/servicios.js
-async function cargarServicios() {
-    try {
-        const response = await fetch('../data/servicios.json');
-        if (!response.ok) throw new Error('No se pudo cargar servicios.json');
 
-        const servicios = await response.json();
-        const contenedor = document.getElementById("servicios-container");
-        contenedor.innerHTML = ""; // Limpiamos antes de pintar
+async function cargarServiciostabla() {
+  try {
+    const response = await fetch('../data/servicios.json');
+    if (!response.ok) throw new Error("No se pudo cargar servicios.json");
 
-        servicios.forEach(servicio => {
-            const card = document.createElement("div");
-            card.classList.add("servicio-card");
+    const servicios = await response.json();
+    const tabla = document.getElementById("tabla-servicios");
+    tabla.innerHTML = ""; // limpiar antes de pintar
 
-            card.innerHTML = `
-                <div class="servicio-image ${servicio.imagen}"></div>
-                <div class="servicio-content">
-                    <h3>${servicio.nombre}</h3>
-                    <div class="precio">${servicio.precio}</div>
-                    ${servicio.estado ? `<div class="badge disponible">${servicio.estado}</div>` : ""}
-                    <p>${servicio.descripcion}</p>
-                </div>
-            `;
+    servicios.forEach(servicio => {
+      const fila = document.createElement("tr");
 
-            contenedor.appendChild(card);
-        });
-    } catch (error) {
-        console.error("Error cargando servicios:", error);
-    }
+      fila.innerHTML = `
+        <td>${servicio.id}</td>
+        <td>${servicio.nombre}</td>
+        <td>${servicio.precio}</td>
+        <td>${servicio.estado ? `<span class="badge disponible">${servicio.estado}</span>`: 'No'}</td>
+        <td>${servicio.descripcion || 'Sin descripción'}</td>
+        <td><button class="btn-agregar" data-id="${servicio.id}">Agregar</button></td>
+      `;
+
+      tabla.appendChild(fila);
+    });
+
+    // Delegar evento agregar al carrito
+    tabla.addEventListener("click", (e) => {
+      if (e.target.classList.contains("btn-agregar")) {
+        const id = e.target.dataset.id;
+        const servicio = servicios.find(s => s.id == id);
+        agregarAlCarrito(servicio);
+
+        // 🔹 mostrar aviso flotante
+        mostrarNotificacion(`${servicio.nombre} agregado al carrito ✅`);
+      }
+    });
+  } catch (error) {
+    console.error("Error cargando servicios:", error);
+  }
 }
 
 // Ejecutar al cargar la página
-document.addEventListener("DOMContentLoaded", cargarServicios);
+document.addEventListener("DOMContentLoaded", cargarServiciostabla);
+

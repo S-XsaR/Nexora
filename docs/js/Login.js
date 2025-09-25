@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const usuarioInput = document.getElementById('usuario').value.trim();
     const contrasenaInput = document.getElementById('contrasena').value.trim();
 
-    fetch('../docs/data/usuarios.json')
+    fetch('../data/usuarios.json')
       .then(response => {
         if (!response.ok) throw new Error('No se pudo cargar el archivo JSON');
         return response.json();
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         );
 
         if (usuarioValido) {
-          window.location.href = '../docs/admin/IndexAdmin.html';
+          window.location.href = '../admin/IndexAdmin.html';
         } else {
           mensajeError.textContent = 'Credenciales incorrectas. Intente nuevamente.';
           mensajeError.style.display = 'block';

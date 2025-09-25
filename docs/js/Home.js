@@ -1,8 +1,8 @@
 // js/home.js
 async function cargarServiciosHome() {
-  try {
-    const response = await fetch('../docs/data/servicios.json');
-    if (!response.ok) throw new Error('No se pudo cargar servicios.json');
+    try {
+    const response = await fetch('data/servicios.json');
+    if (!response.ok) throw new Error("No se pudo cargar servicios.json");
 
     const servicios = await response.json();
 

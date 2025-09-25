@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const usuarioInput = document.getElementById('usuario').value.trim();
     const contrasenaInput = document.getElementById('contrasena').value.trim();
 
-    fetch('../data/usuarios.json')
+    fetch('../docs/data/usuarios.json')
       .then(response => {
         if (!response.ok) throw new Error('No se pudo cargar el archivo JSON');
         return response.json();

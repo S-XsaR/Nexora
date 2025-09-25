@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         );
 
         if (usuarioValido) {
-          window.location.href = '../admin/IndexAdmin.html';
+          window.location.href = '../docs/admin/IndexAdmin.html';
         } else {
           mensajeError.textContent = 'Credenciales incorrectas. Intente nuevamente.';
           mensajeError.style.display = 'block';

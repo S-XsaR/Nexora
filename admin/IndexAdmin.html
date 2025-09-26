@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../admin/Css/IndexAdmin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/Ne logo.png">
+
+</head>
+<body>
+     <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="../img/logo ne.png" style="height:40px;">
+                    <h2>Nexora Consulting</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="../html/Home.html" class="btn-cerrar-sesion">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <h1 class="admin-title">Gestión de Servicios</h1>
+    
+            <div class="admin-actions">
+                <input type="text" placeholder="Buscar servicio..." class="search-bar" />
+            </div>
+            <div>
+                <Section class="contenedor">
+                    <!-- Formulario -->
+                    <section class="form-section">
+                        <h2>Agregar / Editar Servicio</h2>
+                        <form id="formServicio">
+                            <label>Nombre del servicio</label>
+                            <input type="text" name="nombre" required />
+    
+                            <label>Precio</label>
+                            <input type="number" name="precio" required />
+    
+                            <label>Cantidad</label>
+                            <input type="number" name="cantidad" required />
+    
+                            <label>Descripción</label>
+                            <textarea name="descripcion" rows="3"></textarea>
+    
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" id="promocion" name="promocion" />
+                                <label for="promocion">¿En promoción?</label>
+                            </div>
+    
+    
+                            <div class="form-buttons">
+                                <button type="submit" class="btn-primary">Guardar Servicio</button>
+                                <button type="reset" class="btn-secondary">Limpiar</button>
+                            </div>
+                        </form>
+                    </section>
+    
+                    <!-- Tabla -->
+                    <section class="table-section">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th>Promoción</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Desarrollo web</td>
+                                    <td>$500,000</td>
+                                    <td>5</td>
+                                    <td><span class="oferta">Sí</span></td>
+                                    <td>
+                                        <button class="btn-table edit">Editar</button>
+                                        <button class="btn-table delete">Eliminar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Consultoría UX</td>
+                                    <td>$300,000</td>
+                                    <td>10</td>
+                                    <td>No</td>
+                                    <td>
+                                        <button class="btn-table edit">Editar</button>
+                                        <button class="btn-table delete">Eliminar</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Mantenimiento mensual</td>
+                                    <td>$120,000</td>
+                                    <td>20</td>
+                                    <td>No</td>
+                                    <td>
+                                        <button class="btn-table edit">Editar</button>
+                                        <button class="btn-table delete">Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </Section>
+    
+            </div>
+    
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nexora Consulting</h3>
+                    <p>Estrategias, diseño y desarrollo con foco en el crecimiento de tu negocio.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <span class="social-icon">📘</span>
+                        <span class="social-icon">🐦</span>
+                        <span class="social-icon">📧</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>+57 300 000 0000</p>
+                    <p>Bogotá, Colombia</p>
+                    <p class="copyright">© 2025 Nexera Consulting</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -38,7 +38,17 @@
             background: #dbeafe;
             padding: 0.5rem;
             border-radius: 8px;
-        }
+         }
+        .logo{
+         display: flex;
+         align-items: center;
+          gap: 0.5px;
+       }
+        .logo img {
+          height: 40px;
+          width: auto;
+          display: block;
+    }
 
         .logo h2 {
             color: #1f2937;

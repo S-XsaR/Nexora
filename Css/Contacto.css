@@ -29,6 +29,7 @@
             justify-content: space-between;
             align-items: center;
         }
+        
 
         .logo {
             display: flex;
@@ -39,11 +40,17 @@
             color: #333;
         }
 
-        .logo::before {
-            content: "⚙";
-            color: #007bff;
-            font-size: 24px;
-        }
+        .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5px;
+}
+.logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+        
 
         .nav-links {
             display: flex;

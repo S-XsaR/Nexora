@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nombre": "Desarrollo web",
+    "precio": "$500.000",
+    "estado": "En Oferta",
+    "descripcion": "Sitios y apps a medida para tu crecimiento.",
+    "imagen": "desarrollo-web"
+  },
+  {
+    "id": 2,
+    "nombre": "Consultoría UX",
+    "precio": "$300.000",
+    "estado": "",
+    "descripcion": "Optimiza las experiencias para mejor conversión.",
+    "imagen": "consultoria-ux"
+  },
+  {
+    "id": 3,
+    "nombre": "Mantenimiento mensual",
+    "precio": "$200.000",
+    "estado": "",
+    "descripcion": "Soporte continuo para tu tranquilidad.",
+    "imagen": "mantenimiento"
+  },
+  {
+    "id": 4,
+    "nombre": "Rediseño web",
+    "precio": "$400.000",
+    "estado": "En Oferta",
+    "descripcion": "Renueva tu presencia online con estilo.",
+    "imagen": "redisenio-web"
+  },
+  {
+    "id": 5,
+    "nombre": "Estrategia digital",
+    "precio": "$350.000",
+    "estado": "",
+    "descripcion": "Planifica tu éxito en el mundo digital.",
+    "imagen": "estrategia-digital"
+  },
+  {
+    "id": 6,
+    "nombre": "SEO avanzado",
+    "precio": "$450.000",
+    "estado": "",
+    "descripcion": "Mejora tu visibilidad en buscadores.",
+    "imagen": "seo-avanzado"
+  },
+  {
+    "id": 7,
+    "nombre": "Marketing de contenidos",
+    "precio": "$300.000",
+    "estado": "",
+    "descripcion": "Atrae y retén a tu audiencia con contenido relevante.",
+    "imagen": "marketing-contenidos"
+  },
+  {
+    "id": 8,
+    "nombre": "Desarrollo de apps móviles",
+    "precio": "$600.000",
+    "estado": "En Oferta",
+    "descripcion": "Apps personalizadas para iOS y Android.",
+    "imagen": "desarrollo-apps"
+  },
+  {
+    "id": 9,
+    "nombre": "Análisis de datos",
+    "precio": "$400.000",
+    "estado": "",
+    "descripcion": "Transforma datos en decisiones estratégicas.",
+    "imagen": "analisis-datos"
+  },
+  {
+    "id": 10,
+    "nombre": "Publicidad en redes sociales",
+    "precio": "$350.000",
+    "estado": "",
+    "descripcion": "Campañas efectivas para aumentar tu alcance.",
+    "imagen": "publicidad-redes"
+  },
+  {
+    "id": 11,
+    "nombre": "Email marketing",
+    "precio": "$250.000",
+    "estado": "",
+    "descripcion": "Conecta con tu audiencia a través del correo.",
+    "imagen": "email-marketing"
+  },
+  {
+    "id": 12,
+    "nombre": "Diseño gráfico",
+    "precio": "$300.000",
+    "estado": "",
+    "descripcion": "Creatividad visual para tu marca.",
+    "imagen": "diseno-grafico"
+  }
+]

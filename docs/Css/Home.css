@@ -279,13 +279,13 @@ body {
   background-image: url('../img/mantenimiento.webp');
 }
 
-.seo { background-image: url('../Img/seo.webp'); }
-.seguridad { background-image: url('../Img/seguridad.webp'); }
-.marketing { background-image: url('../Img/marketing.webp'); }
-.branding { background-image: url('../Img/branding.webp'); }
-.ecommerce { background-image: url('../Img/ecommerce.webp'); }
-.redes { background-image: url('../Img/redes.webp'); }
-.cloud { background-image: url('../Img/cloud.webp'); }
+.seo { background-image: url('../img/seo.webp'); }
+.seguridad { background-image: url('../img/seguridad.webp'); }
+.marketing { background-image: url('../img/marketing.webp'); }
+.branding { background-image: url('../img/branding.webp'); }
+.ecommerce { background-image: url('../img/ecommerce.webp'); }
+.redes { background-image: url('../img/redes.webp'); }
+.cloud { background-image: url('../img/cloud.webp'); }
 
 /* ================= Footer ================= */
  footer {

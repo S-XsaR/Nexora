@@ -3,55 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
-    <link rel="stylesheet" href="../Css/Servicios.css">
-    <link rel="stylesheet" href="../Css/carrito.css">
-    <link rel="icon" type="image/png" href="../img/Ne logo.png">
+    <title>Nexora </title>
+    <link rel="stylesheet" href="Css/Home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/Ne logo.png">
+    <link rel="stylesheet" href="Css/carrito.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <img src="../img/logo ne.png" style="height:40px;">
-                    <h2>Nexera Consulting</h2>
+                    <img src="img/logo ne.png" style="height:40px;">
+                    <h2>Nexora Consulting</h2>
                 </div>
                 <ul class="nav-menu">
-                    <li><a href="Home.html">Inicio</a></li>
-                    <li><a href="Servicios.html">Servicios</a></li>
-                    <li><a href="Nosotros.html">Nosotros</a></li>
-                    <li><a href="Contacto.html">Contacto</a></li>
-                    <li><a href="login.html" class="btn-login">Iniciar sesión</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="html/Servicios.html">Servicios</a></li>
+                    <li><a href="html/Nosotros.html">Nosotros</a></li>
+                    <li><a href="html/Contacto.html">Contacto</a></li>
+                    <li><a href="html/login.html" class="btn-login">Iniciar sesión</a></li>
                 </ul>
-                <!-- 🔹 Botón carrito en el header -->
+                <!-- Botón del carrito -->
                 <button id="btn-carrito" class="carrito-icono">🛒 
                     <span id="contador-carrito">0</span>
                 </button>
             </div>
         </nav>
     </header>
-    <header>
-        <h2>Gestión de Servicios</h2>
-        <button id="btn-carrito" class="carrito-icono">🛒 <span id="contador-carrito">0</span></button>
-    </header>
+
     <main>
-        <div class="tabla-servicios">
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th>Precio</th>
-                        <th>Promoción</th>
-                        <th>Descripción</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody id="tabla-servicios">
-                    <!-- Servicios cargados dinámicamente -->
-                </tbody>
-            </table>
-        </div>
+        <section class="hero">
+            <div class="container">
+                <h1>Soluciones digitales que impulsan tu negocio</h1>
+                <p>Consultoría, desarrollo y mantenimiento con foco en resultados. Descubre nuestros servicios diseñados para hacer crecer tu empresa.</p>
+                <a href="html/Servicios.html">
+                    <button class="cta-button">Ver más detalles</button>
+                </a>
+            </div>
+        </section>
+
+        <section class="servicios">
+            <h2>Servicios</h2>
+            <div class="carrusel-wrapper">
+                <button class="carrusel-btn prev" aria-label="Anterior">‹</button>
+                <div id="servicios-container" class="carrusel"></div>
+                <button class="carrusel-btn next" aria-label="Siguiente">›</button>
+            </div>
+        </section>
 
         <!-- Modal del Carrito -->
         <div id="modal-carrito" class="modal">
@@ -63,7 +62,8 @@
             </div>
         </div>
     </main>
-     <footer>
+
+    <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -95,10 +95,7 @@
             </div>
         </div>
     </footer>
-
-    <script src="../js/servicios.js"></script>
-    <script src="../js/carrito.js"></script>
+    <script src="js/Home.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
 </html>
-
-

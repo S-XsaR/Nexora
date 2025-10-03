@@ -203,7 +203,7 @@
             width: 100%;
             height: 300px;
             border-radius: 20px;
-            background-image: url('/img/consultores.jpg');
+            background-image: url('../img/consultores.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -289,24 +289,24 @@
         }
 
         .team-member:nth-child(1) .member-avatar {
-            background-image: url('/img/icono\ gente.webp');
+            background-image: url('../img/icono\ gente.webp');
             background-size: cover;
             background-position: center;
         }
 
         .team-member:nth-child(2) .member-avatar {
-            background-image: url('/img/icono\ gente.webp');
+            background-image: url('../img/icono\ gente.webp');
             background-size: cover;
             background-position: center;
         }
 
         .team-member:nth-child(3) .member-avatar {
-            background-image: url('/img/icono\ gente.webp');
+            background-image: url('../img/icono\ gente.webp');
             background-size: cover;
             background-position: center;
         }
         .team-member:nth-child(4) .member-avatar {
-            background-image: url('/img/icono\ gente.webp');
+            background-image: url('../img/icono\ gente.webp');
             background-size: cover;
             background-position: center;
             

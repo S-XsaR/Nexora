@@ -5,7 +5,9 @@
     "precio": "$500.000",
     "estado": "En Oferta",
     "descripcion": "Sitios y apps a medida para tu crecimiento.",
-    "imagen": "desarrollo-web"
+    "imagen": "desarrollo-web",
+    "detalles": "Creamos sitios web responsivos y aplicaciones personalizadas que se adaptan a tus necesidades específicas, utilizando las últimas tecnologías para garantizar rendimiento y escalabilidad."
+    
   },
   {
     "id": 2,
@@ -13,7 +15,8 @@
     "precio": "$300.000",
     "estado": "",
     "descripcion": "Optimiza las experiencias para mejor conversión.",
-    "imagen": "consultoria-ux"
+    "imagen": "consultoria-ux",
+    "detalles": "Analizamos y mejoramos la experiencia del usuario en tus plataformas digitales para aumentar la satisfacción y la tasa de conversión, aplicando principios de diseño centrado en el usuario."
   },
   {
     "id": 3,
@@ -21,78 +24,70 @@
     "precio": "$200.000",
     "estado": "",
     "descripcion": "Soporte continuo para tu tranquilidad.",
-    "imagen": "mantenimiento"
+    "imagen": "mantenimiento",
+    "detalles": "Ofrecemos servicios de mantenimiento y soporte técnico continuo para asegurar que tu sitio web o aplicación funcione sin problemas, incluyendo actualizaciones, backups y monitoreo de seguridad."
   },
   {
     "id": 4,
-    "nombre": "Rediseño web",
-    "precio": "$400.000",
+    "nombre": "SEO Avanzado",
+    "precio": "$250.000",
     "estado": "En Oferta",
-    "descripcion": "Renueva tu presencia online con estilo.",
-    "imagen": "redisenio-web"
+    "descripcion": "Mejora tu visibilidad en buscadores y aumenta clientes.",
+    "imagen": "seo",
+    "detalles": "Implementamos estrategias avanzadas de SEO para mejorar el posicionamiento de tu sitio web en los motores de búsqueda, aumentando el tráfico orgánico y atrayendo a más clientes potenciales."
   },
   {
     "id": 5,
-    "nombre": "Estrategia digital",
-    "precio": "$350.000",
+    "nombre": "Auditoría de seguridad",
+    "precio": "$450.000",
     "estado": "",
-    "descripcion": "Planifica tu éxito en el mundo digital.",
-    "imagen": "estrategia-digital"
+    "descripcion": "Protege tu web con análisis de vulnerabilidades.",
+    "imagen": "seguridad",
+    "detalles": "Realizamos auditorías exhaustivas de seguridad para identificar y corregir vulnerabilidades en tu sitio web o aplicación, asegurando la protección de tus datos y los de tus usuarios."
   },
   {
     "id": 6,
-    "nombre": "SEO avanzado",
-    "precio": "$450.000",
+    "nombre": "Marketing Digital",
+    "precio": "$350.000",
     "estado": "",
-    "descripcion": "Mejora tu visibilidad en buscadores.",
-    "imagen": "seo-avanzado"
+    "descripcion": "Campañas en redes sociales y Google Ads.",
+    "imagen": "marketing",
+    "detalles": "Desarrollamos y gestionamos campañas de marketing digital en plataformas como redes sociales y Google Ads para aumentar la visibilidad de tu marca y atraer a más clientes."
   },
   {
     "id": 7,
-    "nombre": "Marketing de contenidos",
-    "precio": "$300.000",
+    "nombre": "Branding y diseño gráfico",
+    "precio": "$280.000",
     "estado": "",
-    "descripcion": "Atrae y retén a tu audiencia con contenido relevante.",
-    "imagen": "marketing-contenidos"
+    "descripcion": "Construye una identidad visual fuerte y memorable.",
+    "imagen": "branding",
+    "detalles": "Creamos identidades visuales completas, incluyendo logotipos, paletas de colores y materiales de marketing, para que tu marca destaque y sea fácilmente reconocible."
   },
   {
     "id": 8,
-    "nombre": "Desarrollo de apps móviles",
+    "nombre": "E-commerce",
     "precio": "$600.000",
     "estado": "En Oferta",
-    "descripcion": "Apps personalizadas para iOS y Android.",
-    "imagen": "desarrollo-apps"
+    "descripcion": "Tiendas online completas listas para vender.",
+    "imagen": "ecommerce",
+    "detalles": "Desarrollamos tiendas en línea personalizadas con todas las funcionalidades necesarias para gestionar productos, pagos y envíos, facilitando la venta de tus productos en el mercado digital."
   },
   {
     "id": 9,
-    "nombre": "Análisis de datos",
-    "precio": "$400.000",
+    "nombre": "Gestión de redes sociales",
+    "precio": "$220.000",
     "estado": "",
-    "descripcion": "Transforma datos en decisiones estratégicas.",
-    "imagen": "analisis-datos"
+    "descripcion": "Crecimiento orgánico y contenido estratégico.",
+    "imagen": "redes",
+    "detalles": "Gestionamos tus perfiles en redes sociales, creando contenido atractivo y estrategias de crecimiento orgánico para aumentar tu audiencia y mejorar la interacción con tus seguidores."
   },
   {
     "id": 10,
-    "nombre": "Publicidad en redes sociales",
-    "precio": "$350.000",
+    "nombre": "Consultoría en la nube",
+    "precio": "$400.000",
     "estado": "",
-    "descripcion": "Campañas efectivas para aumentar tu alcance.",
-    "imagen": "publicidad-redes"
-  },
-  {
-    "id": 11,
-    "nombre": "Email marketing",
-    "precio": "$250.000",
-    "estado": "",
-    "descripcion": "Conecta con tu audiencia a través del correo.",
-    "imagen": "email-marketing"
-  },
-  {
-    "id": 12,
-    "nombre": "Diseño gráfico",
-    "precio": "$300.000",
-    "estado": "",
-    "descripcion": "Creatividad visual para tu marca.",
-    "imagen": "diseno-grafico"
+    "descripcion": "Migración y optimización en AWS, Azure o GCP.",
+    "imagen": "cloud",
+    "detalles": "Asesoramos y asistimos en la migración de tus aplicaciones y datos a plataformas en la nube como AWS, Azure o GCP, optimizando costos y mejorando la escalabilidad y seguridad de tus servicios."
   }
 ]

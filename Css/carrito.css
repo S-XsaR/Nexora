@@ -1,0 +1,184 @@
+/* ====== Estilos del Carrito ====== */
+
+.modal {
+  display: none;  /* Oculto por defecto */
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* Fondo oscuro */
+}
+
+.modal-contenido {
+  background: #fff;
+  position: absolute;
+  top: 0; 
+  right: 0;
+  height: 100%;
+  width: 350px;
+  max-width: 90%;
+  padding: 20px;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.3);
+  animation: slideIn 0.3s ease;
+  overflow-y: auto;   /* scroll si el carrito es muy largo */
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* ====== Encabezado dentro del modal ====== */
+.modal-contenido h3 {
+  margin-bottom: 15px;
+  color: #0c203b;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cerrar {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ====== Lista del carrito ====== */
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+#lista-carrito li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.btn-eliminar {
+  background: transparent;
+  border: none;
+  color: red;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ====== Total ====== */
+#total-carrito {
+  font-weight: bold;
+  color: #0c203b;
+}
+
+/* ====== Notificación flotante ====== */
+.notificacion {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #0c203b;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 3000;
+  font-size: 0.9rem;
+}
+
+.notificacion.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====== Carrito (Modal) ====== */
+.carrito-icono {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+#contador-carrito {
+  background: red;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -10px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  background: #fff;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: aparecer 0.3s ease;
+}
+
+@keyframes aparecer {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.cerrar {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+#lista-carrito li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.btn-eliminar {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#total-carrito {
+  font-weight: bold;
+  color: #0c203b;
+}

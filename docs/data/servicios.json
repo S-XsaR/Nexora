@@ -4,6 +4,7 @@
     "nombre": "Desarrollo web",
     "precio": "$500.000",
     "estado": "En Oferta",
+    "cantidad": "5",
     "descripcion": "Sitios y apps a medida para tu crecimiento.",
     "imagen": "desarrollo-web"
   },
@@ -12,6 +13,7 @@
     "nombre": "Consultoría UX",
     "precio": "$300.000",
     "estado": "",
+    "cantidad": "8",
     "descripcion": "Optimiza las experiencias para mejor conversión.",
     "imagen": "consultoria-ux"
   },
@@ -20,6 +22,7 @@
     "nombre": "Mantenimiento mensual",
     "precio": "$200.000",
     "estado": "",
+    "cantidad": "12",
     "descripcion": "Soporte continuo para tu tranquilidad.",
     "imagen": "mantenimiento"
   },
@@ -28,6 +31,7 @@
     "nombre": "SEO Avanzado",
     "precio": "$250.000",
     "estado": "En Oferta",
+    "cantidad": "5",
     "descripcion": "Mejora tu visibilidad en buscadores y aumenta clientes.",
     "imagen": "seo"
   },
@@ -36,6 +40,7 @@
     "nombre": "Auditoría de seguridad",
     "precio": "$450.000",
     "estado": "",
+    "cantidad": "13",
     "descripcion": "Protege tu web con análisis de vulnerabilidades.",
     "imagen": "seguridad"
   },
@@ -44,6 +49,7 @@
     "nombre": "Marketing Digital",
     "precio": "$350.000",
     "estado": "",
+    "cantidad": "7",
     "descripcion": "Campañas en redes sociales y Google Ads.",
     "imagen": "marketing"
   },
@@ -52,6 +58,7 @@
     "nombre": "Branding y diseño gráfico",
     "precio": "$280.000",
     "estado": "",
+    "cantidad": "9",
     "descripcion": "Construye una identidad visual fuerte y memorable.",
     "imagen": "branding"
   },
@@ -60,6 +67,7 @@
     "nombre": "E-commerce",
     "precio": "$600.000",
     "estado": "En Oferta",
+    "cantidad": "4",
     "descripcion": "Tiendas online completas listas para vender.",
     "imagen": "ecommerce"
   },
@@ -68,6 +76,7 @@
     "nombre": "Gestión de redes sociales",
     "precio": "$220.000",
     "estado": "",
+    "cantidad": "10",
     "descripcion": "Crecimiento orgánico y contenido estratégico.",
     "imagen": "redes"
   },
@@ -76,6 +85,7 @@
     "nombre": "Consultoría en la nube",
     "precio": "$400.000",
     "estado": "",
+    "cantidad": "6",
     "descripcion": "Migración y optimización en AWS, Azure o GCP.",
     "imagen": "cloud"
   }

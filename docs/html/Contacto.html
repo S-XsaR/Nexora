@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../Css/Contacto.css">
     <link rel="icon" type="image/png" href="../img/Ne logo.png">
     <link rel="stylesheet" href="../Css/carrito.css">
+    <link rel="stylesheet" href="../Css/modal-politicas.css">
 </head>
 <!-- Carrito -->
 <div id="modal-carrito" class="modal">
@@ -17,7 +18,7 @@
     <p>Total: <span id="total-carrito">$0</span></p>
   </div>
 </div>
-<body>
+<>
     <header class="header">
         <nav class="container nav">
             <div class="logo">
@@ -116,7 +117,7 @@
                         <div class="info-icon">📍</div>
                         <div class="info-content">
                             <h4>Ubicación</h4>
-                            <p>Medellín, Colombia</p>
+                            <p>Bogotá, Colombia</p>
                         </div>
                     </div>
 
@@ -177,6 +178,106 @@
             </div>
         </div>
     </footer>
+            <!-- Modal de Políticas de Privacidad -->
+<div id="modal-politicas" class="modal-politicas">
+  <div class="modal-politicas-contenido">
+    <div class="modal-politicas-header">
+      <h2 class="modal-politicas-titulo">Política de Privacidad</h2>
+      <button id="cerrar-modal-politicas" class="modal-politicas-cerrar">&times;</button>
+    </div>
+    
+    <div class="modal-politicas-body">
+      <div class="politicas-seccion">
+        <h3>1. Información que Recopilamos</h3>
+        <p>
+          En Nexora Consulting recopilamos información personal que usted nos proporciona directamente cuando:
+        </p>
+        <ul>
+          <li>Se comunica con nosotros a través de nuestros formularios de contacto</li>
+          <li>Solicita información sobre nuestros servicios</li>
+          <li>Se suscribe a nuestro boletín informativo</li>
+          <li>Utiliza nuestros servicios de consultoría</li>
+        </ul>
+        <p>
+          La información que recopilamos puede incluir: nombre, dirección de correo electrónico, 
+          número de teléfono, empresa, cargo y otra información que decida proporcionarnos.
+        </p>
+      </div>
+
+      <div class="politicas-seccion">
+        <h3>2. Uso de la Información</h3>
+        <p>Utilizamos la información recopilada para:</p>
+        <ul>
+          <li>Responder a sus consultas y solicitudes</li>
+          <li>Proporcionar y mejorar nuestros servicios</li>
+          <li>Enviar comunicaciones sobre nuestros servicios (con su consentimiento)</li>
+          <li>Cumplir con obligaciones legales y regulatorias</li>
+          <li>Analizar y mejorar nuestras operaciones comerciales</li>
+        </ul>
+      </div>
+
+      <div class="politicas-seccion">
+        <h3>3. Protección de Datos</h3>
+        <p>
+          Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger 
+          su información personal contra acceso no autorizado, alteración, divulgación o destrucción. 
+          Esto incluye el uso de cifrado SSL, controles de acceso y auditorías de seguridad regulares.
+        </p>
+      </div>
+
+      <div class="politicas-seccion">
+        <h3>4. Compartir Información</h3>
+        <p>
+          No vendemos, alquilamos ni compartimos su información personal con terceros, excepto:
+        </p>
+        <ul>
+          <li>Cuando sea necesario para proporcionar nuestros servicios</li>
+          <li>Con proveedores de servicios que nos ayudan en nuestras operaciones</li>
+          <li>Cuando sea requerido por ley o para proteger nuestros derechos</li>
+        </ul>
+      </div>
+
+      <div class="politicas-seccion">
+        <h3>5. Sus Derechos</h3>
+        <p>Usted tiene derecho a:</p>
+        <ul>
+          <li>Acceder a su información personal que tenemos</li>
+          <li>Solicitar la corrección de información inexacta</li>
+          <li>Solicitar la eliminación de su información personal</li>
+          <li>Oponerse al procesamiento de sus datos</li>
+          <li>Retirar su consentimiento en cualquier momento</li>
+        </ul>
+      </div>
+
+      <div class="politicas-seccion">
+        <h3>6. Cookies y Tecnologías Similares</h3>
+        <p>
+          Utilizamos cookies y tecnologías similares para mejorar su experiencia en nuestro sitio web, 
+          analizar el tráfico y personalizar el contenido. Puede controlar el uso de cookies a través 
+          de la configuración de su navegador.
+        </p>
+      </div>
+
+      <div class="politicas-seccion">
+        <h3>7. Contacto</h3>
+        <p>
+          Si tiene preguntas sobre esta política de privacidad o desea ejercer sus derechos, 
+          puede contactarnos en:
+        </p>
+        <p>
+          <strong>Email:</strong> info@nexora.co<br>
+          <strong>Teléfono:</strong> +57 300 000 0000<br>
+          <strong>Dirección:</strong> Bogotá, Colombia
+        </p>
+      </div>
+    </div>
+
+    <div class="politicas-footer">
+      <p class="politicas-fecha">Última actualización: Enero 2025</p>
+      <button id="btn-aceptar-politicas" class="btn-aceptar">Aceptar y Cerrar</button>
+    </div>
+  </div>
+</div>
     <script src="../Js/Contacto.js"></script>
     <script src="../js/carrito.js"></script>
     </body>

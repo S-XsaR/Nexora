@@ -26,9 +26,8 @@ function actualizarCarrito() {
   totalCarrito.textContent = `$${total.toLocaleString()}`;
   contadorCarrito.textContent = carrito.length;
 
-  // Agregar botón de checkout si hay elementos
   const botonExistente = document.getElementById("btn-checkout");
-  if (botonExistente) botonExistente.remove(); // evitar duplicados
+  if (botonExistente) botonExistente.remove();
 
   if (carrito.length > 0) {
     const btnCheckout = document.createElement("button");
@@ -36,17 +35,10 @@ function actualizarCarrito() {
     btnCheckout.className = "btn-checkout";
     btnCheckout.textContent = "Finalizar compra";
 
-    // Evento para simular pago
     btnCheckout.addEventListener("click", () => {
-      const resumen = carrito.map(item => `- ${item.nombre} (${item.precio})`).join('\n');
-      alert(`🧾 Resumen de compra:\n\n${resumen}\n\nTotal: ${totalCarrito.textContent}\n\n✅ ¡Gracias por tu compra (simulada)!`);
-      
-      carrito = [];
-      actualizarCarrito();
-      modalCarrito.style.display = "none";
+      mostrarFacturaModal();
     });
 
-    // Insertar el botón al final del modal
     modalCarrito.querySelector(".modal-contenido").appendChild(btnCheckout);
   }
 
@@ -68,15 +60,11 @@ listaCarrito.addEventListener("click", (e) => {
   }
 });
 
-// Mostrar / Ocultar modal
 btnCarrito.addEventListener("click", () => modalCarrito.style.display = "block");
 cerrarModal.addEventListener("click", () => modalCarrito.style.display = "none");
 
-// Inicializar
 actualizarCarrito();
 
-
-// Notificación flotante
 function mostrarNotificacion(mensaje) {
   const notificacion = document.createElement("div");
   notificacion.className = "notificacion";
@@ -84,12 +72,39 @@ function mostrarNotificacion(mensaje) {
 
   document.body.appendChild(notificacion);
 
-  // Animación de entrada
-  setTimeout(() => notificacion.classList.add("visible"), 100);
 
-  // Animación de salida y eliminación
+  setTimeout(() => notificacion.classList.add("visible"), 100);
   setTimeout(() => {
     notificacion.classList.remove("visible");
     setTimeout(() => notificacion.remove(), 300);
   }, 2500);
+}
+
+function mostrarFacturaModal() {
+  const total = totalCarrito.textContent;
+  const resumen = carrito
+    .map(item => `<li>${item.nombre} - ${item.precio}</li>`)
+    .join("");
+
+  const facturaModal = document.createElement("div");
+  facturaModal.classList.add("factura-modal");
+
+  facturaModal.innerHTML = `
+    <div class="factura-contenido">
+      <h3>🧾 Resumen de tu compra</h3>
+      <ul>${resumen}</ul>
+      <p class="factura-total"><strong>Total:</strong> ${total}</p>
+      <p class="factura-msg">Gracias por tu compra. Este es un simulador de pago 💳</p>
+      <button id="btn-cerrar-factura" class="btn-cerrar-factura">Cerrar</button>
+    </div>
+  `;
+
+  document.body.appendChild(facturaModal);
+
+  document.getElementById("btn-cerrar-factura").addEventListener("click", () => {
+    facturaModal.remove();
+    carrito = [];
+    actualizarCarrito();
+    modalCarrito.style.display = "none";
+  });
 }

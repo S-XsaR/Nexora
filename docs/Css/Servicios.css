@@ -82,8 +82,6 @@ main {
   padding-bottom: 2rem;
 }
 
-<<<<<<< HEAD
-=======
 /* ====== Grid de Servicios (Cards estilo Home) ====== */
 .servicios-grid {
   display: grid;
@@ -160,7 +158,6 @@ main {
 }
 
 
->>>>>>> 7c052a30b1a3c514acdef6d7afdb48c77dfd14ee
 /* ====== Tabla de Servicios ====== */
 .tabla-servicios {
   margin: 40px auto;

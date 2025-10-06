@@ -82,6 +82,85 @@ main {
   padding-bottom: 2rem;
 }
 
+<<<<<<< HEAD
+=======
+/* ====== Grid de Servicios (Cards estilo Home) ====== */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.servicio-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+.servicio-image {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.servicio-content {
+  padding: 15px;
+}
+
+.precio {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0c203b;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 0.8em;
+  margin: 5px 0;
+  background: #8de5ee;
+  color: #0c203b;
+}
+
+.desarrollo-web { background-image: url('../Img/desarrollo web.webp'); }
+.consultoria-ux { background-image: url('../Img/consultores.webp'); }
+.mantenimiento { background-image: url('../Img/mantenimiento.webp'); }
+.seo { background-image: url('../Img/seo.webp'); }
+.seguridad { background-image: url('../Img/seguridad.webp'); }
+.marketing { background-image: url('../Img/marketing.webp'); }
+.branding { background-image: url('../Img/branding.webp'); }
+.ecommerce { background-image: url('../Img/ecommerce.webp'); }
+.redes { background-image: url('../Img/redes.webp'); }
+.cloud { background-image: url('../Img/cloud.webp'); }
+
+
+.buscador-servicios {
+  text-align: right;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+#buscador {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  width: 250px;
+  transition: all 0.2s ease;
+}
+
+#buscador:focus {
+  outline: none;
+  border-color: #0c203b;
+  box-shadow: 0 0 5px rgba(12, 32, 59, 0.3);
+}
+
+
+>>>>>>> 7c052a30b1a3c514acdef6d7afdb48c77dfd14ee
 /* ====== Tabla de Servicios ====== */
 .tabla-servicios {
   margin: 40px auto;
@@ -273,4 +352,23 @@ footer {
         grid-template-columns: 1fr;
         text-align: center;
     }
+}
+
+/* === Botón Checkout === */
+.btn-checkout {
+  background: #0c203b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-checkout:hover {
+  background: #133a6f;
+  transform: scale(1.03);
 }

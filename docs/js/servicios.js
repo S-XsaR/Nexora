@@ -39,3 +39,19 @@ async function cargarServiciostabla() {
 
 document.addEventListener("DOMContentLoaded", cargarServiciostabla);
 
+// ====== Buscador de servicios ======
+document.addEventListener("DOMContentLoaded", () => {
+  const buscador = document.getElementById("buscador");
+
+  if (buscador) {
+    buscador.addEventListener("input", () => {
+      const filtro = buscador.value.toLowerCase();
+      const filas = document.querySelectorAll("#tabla-servicios tr");
+
+      filas.forEach(fila => {
+        const nombre = fila.querySelector("td:nth-child(2)").textContent.toLowerCase();
+        fila.style.display = nombre.includes(filtro) ? "" : "none";
+      });
+    });
+  }
+});

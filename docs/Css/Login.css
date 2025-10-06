@@ -277,3 +277,22 @@ button:hover {
         text-align: center;
     }
 }
+
+/* === Botón Checkout === */
+.btn-checkout {
+  background: #0c203b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 15px;
+  width: 100%;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-checkout:hover {
+  background: #133a6f;
+  transform: scale(1.03);
+}

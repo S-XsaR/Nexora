@@ -84,6 +84,22 @@ function actualizarCarrito() {
   contadorCarrito.textContent = carrito.length;
   contadorCarrito.style.display = carrito.length > 0 ? 'inline-block' : 'none';
 
+  const botonExistente = document.getElementById("btn-checkout");
+  if (botonExistente) botonExistente.remove();
+
+  if (carrito.length > 0) {
+    const btnCheckout = document.createElement("button");
+    btnCheckout.id = "btn-checkout";
+    btnCheckout.className = "btn-checkout";
+    btnCheckout.textContent = "Finalizar compra";
+
+    btnCheckout.addEventListener("click", () => {
+      mostrarFacturaModal();
+    });
+
+    modalCarrito.querySelector(".modal-contenido").appendChild(btnCheckout);
+  }
+
   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
@@ -94,7 +110,20 @@ function agregarAlCarrito(servicio) {
   mostrarNotificacion(`${servicio.nombre} agregado al carrito`);
 }
 
-// Notificación flotante
+// Eliminar servicio
+listaCarrito.addEventListener("click", (e) => {
+  if (e.target.classList.contains("btn-eliminar")) {
+    const index = e.target.dataset.index;
+    carrito.splice(index, 1);
+    actualizarCarrito();
+  }
+});
+
+btnCarrito.addEventListener("click", () => modalCarrito.style.display = "block");
+cerrarModal.addEventListener("click", () => modalCarrito.style.display = "none");
+
+actualizarCarrito();
+
 function mostrarNotificacion(mensaje) {
   const notificacion = document.createElement("div");
   notificacion.className = "notificacion";
@@ -102,16 +131,39 @@ function mostrarNotificacion(mensaje) {
 
   document.body.appendChild(notificacion);
 
-  // Animación de entrada
-  setTimeout(() => notificacion.classList.add("visible"), 100);
 
-  // Animación de salida y eliminación
+  setTimeout(() => notificacion.classList.add("visible"), 100);
   setTimeout(() => {
     notificacion.classList.remove("visible");
     setTimeout(() => notificacion.remove(), 300);
   }, 2500);
 }
 
-// Exportar función para que components.js pueda llamarla
-window.inicializarCarrito = inicializarCarrito;
-window.agregarAlCarrito = agregarAlCarrito;
+function mostrarFacturaModal() {
+  const total = totalCarrito.textContent;
+  const resumen = carrito
+    .map(item => `<li>${item.nombre} - ${item.precio}</li>`)
+    .join("");
+
+  const facturaModal = document.createElement("div");
+  facturaModal.classList.add("factura-modal");
+
+  facturaModal.innerHTML = `
+    <div class="factura-contenido">
+      <h3>🧾 Resumen de tu compra</h3>
+      <ul>${resumen}</ul>
+      <p class="factura-total"><strong>Total:</strong> ${total}</p>
+      <p class="factura-msg">Gracias por tu compra. Este es un simulador de pago 💳</p>
+      <button id="btn-cerrar-factura" class="btn-cerrar-factura">Cerrar</button>
+    </div>
+  `;
+
+  document.body.appendChild(facturaModal);
+
+  document.getElementById("btn-cerrar-factura").addEventListener("click", () => {
+    facturaModal.remove();
+    carrito = [];
+    actualizarCarrito();
+    modalCarrito.style.display = "none";
+  });
+}

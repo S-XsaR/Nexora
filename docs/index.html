@@ -3,35 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora </title>
+    <title>Nexora</title>
     <link rel="stylesheet" href="Css/Home.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/Ne logo.png">
+    <!-- Font Awesome para iconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="Css/carrito.css">
     <link rel="stylesheet" href="Css/modal-servicios.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <img src="img/logo ne.png" style="height:40px;">
-                    <h2>Nexora Consulting</h2>
-                </div>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="html/Servicios.html">Servicios</a></li>
-                    <li><a href="html/Nosotros.html">Nosotros</a></li>
-                    <li><a href="html/Contacto.html">Contacto</a></li>
-                    <li><a href="html/login.html" class="btn-login">Iniciar sesión</a></li>
-                </ul>
-                <!-- Botón del carrito -->
-                <button id="btn-carrito" class="carrito-icono">🛒 
-                    <span id="contador-carrito">0</span>
-                </button>
-            </div>
-        </nav>
-    </header>
+    <!-- Placeholder para el header -->
+    <div id="header-placeholder"></div>
 
     <main>
         <section class="hero">
@@ -53,72 +36,47 @@
             </div>
         </section>
 
-        <!-- Modal del Carrito -->
-        <div id="modal-carrito" class="modal">
-            <div class="modal-contenido">
-                <span id="cerrar-modal" class="cerrar">&times;</span>
-                <h3>Carrito de Compras</h3>
-                <ul id="lista-carrito"></ul>
-                <p>Total: <span id="total-carrito">$0</span></p>
-            </div>
-        </div>
-     <!-- Modal del Servicio -->
-<div id="modal-servicio" class="modal-servicio-overlay">
-  <div class="modal-servicio-contenido">
-    <div class="modal-servicio-header">
-      <div id="modal-servicio-imagen" class="modal-servicio-imagen"></div>
-      <button id="cerrar-modal-servicio" class="modal-servicio-cerrar">&times;</button>
-    </div>
-    
-    <div class="modal-servicio-body">
-      <h3 id="modal-servicio-titulo" class="modal-servicio-titulo"></h3>
-      <div id="modal-servicio-precio" class="modal-servicio-precio"></div>
-      <div id="modal-servicio-estado" class="modal-servicio-estado" style="display: none;"></div>
-      <p id="modal-servicio-descripcion" class="modal-servicio-descripcion"></p>
-      
-      <div class="modal-servicio-acciones">
-        <button id="btn-agregar-servicio" class="btn-modal btn-agregar-carrito">Agregar al carrito</button>
-        <button id="btn-cerrar-modal-servicio" class="btn-modal btn-cerrar">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Nexora Consulting</h3>
-                    <p>Estrategias, diseño y desarrollo con foco en el crecimiento de tu negocio.</p>
+        <!-- Modal del Servicio -->
+        <div id="modal-servicio" class="modal-servicio-overlay">
+            <div class="modal-servicio-contenido">
+                <div class="modal-servicio-header">
+                    <div id="modal-servicio-imagen" class="modal-servicio-imagen"></div>
+                    <button id="cerrar-modal-servicio" class="modal-servicio-cerrar">&times;</button>
                 </div>
-                <div class="footer-section">
-                    <h4>Compañía</h4>
-                    <ul>
-                        <li><a href="Nosotros.html">Nosotros</a></li>
-                        <li><a href="Servicios.html">Servicios</a></li>
-                        <li><a href="Contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Síguenos</h4>
-                    <div class="social-icons">
-                        <span class="social-icon">📘</span>
-                        <span class="social-icon">🐦</span>
-                        <span class="social-icon">📧</span>
+                
+                <div class="modal-servicio-body">
+                    <h3 id="modal-servicio-titulo" class="modal-servicio-titulo"></h3>
+                    <div id="modal-servicio-precio" class="modal-servicio-precio"></div>
+                    <div id="modal-servicio-estado" class="modal-servicio-estado" style="display: none;"></div>
+                    <p id="modal-servicio-descripcion" class="modal-servicio-descripcion"></p>
+                    
+                    <div class="modal-servicio-acciones">
+                        <button id="btn-agregar-servicio" class="btn-modal btn-agregar-carrito">Agregar al carrito</button>
+                        <button id="btn-cerrar-modal-servicio" class="btn-modal btn-cerrar">Cerrar</button>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h4>Contacto</h4>
-                    <p>+57 300 000 0000</p>
-                    <p>Bogotá, Colombia</p>
-                    <p class="copyright">© 2025 Nexera Consulting</p>
-                </div>
             </div>
         </div>
-    </footer>
-    <script src="js/Home.js"></script>
+    </main>
+
+    <!-- Placeholder para el footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Modal del Carrito (SOLO UNA VEZ) -->
+    <div id="modal-carrito" class="modal">
+        <div class="modal-contenido">
+            <span id="cerrar-modal" class="cerrar">&times;</span>
+            <h3>Carrito de Compras</h3>
+            <ul id="lista-carrito"></ul>
+            <p>Total: <span id="total-carrito">$0</span></p>
+        </div>
+    </div>
+
     <script src="js/carrito.js"></script>
+    
+    <script src="js/components.js"></script>
+    <script src="js/Home.js"></script>
     <script src="js/modal-servicios.js"></script>
-</body>
+
+ </body>
 </html>

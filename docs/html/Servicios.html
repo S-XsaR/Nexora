@@ -23,19 +23,23 @@
                     <li><a href="Contacto.html">Contacto</a></li>
                     <li><a href="login.html" class="btn-login">Iniciar sesión</a></li>
                 </ul>
-                <!-- 🔹 Botón carrito en el header -->
+                <!-- Botón carrito -->
                 <button id="btn-carrito" class="carrito-icono">🛒 
                     <span id="contador-carrito">0</span>
                 </button>
             </div>
         </nav>
     </header>
-    <header>
-        <h2>Gestión de Servicios</h2>
-        <button id="btn-carrito" class="carrito-icono">🛒 <span id="contador-carrito">0</span></button>
-    </header>
     <main>
         <div class="tabla-servicios">
+            <h2>Gestión de Servicios:</h2>
+            <div class="buscador-servicios">  <!-- Buscador -->
+            <input 
+                type="text" 
+                id="buscador" 
+                placeholder="Buscar servicio por nombre..." 
+            />
+            </div>
             <table>
                 <thead>
                     <tr>

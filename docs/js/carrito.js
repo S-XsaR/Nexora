@@ -26,6 +26,30 @@ function actualizarCarrito() {
   totalCarrito.textContent = `$${total.toLocaleString()}`;
   contadorCarrito.textContent = carrito.length;
 
+  // Agregar botón de checkout si hay elementos
+  const botonExistente = document.getElementById("btn-checkout");
+  if (botonExistente) botonExistente.remove(); // evitar duplicados
+
+  if (carrito.length > 0) {
+    const btnCheckout = document.createElement("button");
+    btnCheckout.id = "btn-checkout";
+    btnCheckout.className = "btn-checkout";
+    btnCheckout.textContent = "Finalizar compra";
+
+    // Evento para simular pago
+    btnCheckout.addEventListener("click", () => {
+      const resumen = carrito.map(item => `- ${item.nombre} (${item.precio})`).join('\n');
+      alert(`🧾 Resumen de compra:\n\n${resumen}\n\nTotal: ${totalCarrito.textContent}\n\n✅ ¡Gracias por tu compra (simulada)!`);
+      
+      carrito = [];
+      actualizarCarrito();
+      modalCarrito.style.display = "none";
+    });
+
+    // Insertar el botón al final del modal
+    modalCarrito.querySelector(".modal-contenido").appendChild(btnCheckout);
+  }
+
   localStorage.setItem("carrito", JSON.stringify(carrito));
 }
 
